@@ -9,7 +9,10 @@ function getTextFieldValueById(id){
     const textNumber = parseFloat(textValue);
     return textNumber;
 }
-function getElementById(id){
-    const element = document.getElementById(id);
-    return id;
+function showSectionById(id){
+    document.getElementById('form-add-money').classList.add('hidden');
+    document.getElementById('form-cash-out').classList.add('hidden');
+    document.getElementById('transaction-section').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
 }

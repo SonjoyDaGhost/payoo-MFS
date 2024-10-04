@@ -1,17 +1,23 @@
-
+// user action button
+// transaction btn
+document.getElementById('btn-transaction').addEventListener('click', function(){
+    showSectionById('transaction-section');
+})
 // add cash btn
 document.getElementById('btn-addCash').addEventListener('click', function(){
-    document.getElementById('form-add-money').classList.remove('hidden');
-    document.getElementById('form-cash-out').classList.add('hidden');
+    showSectionById('form-add-money')
 })
 // Cash out btn
 document.getElementById('btn-cashOut').addEventListener('click', function(){
-    document.getElementById('form-add-money').classList.add('hidden');
-    document.getElementById('form-cash-out').classList.remove('hidden');
+    
+    showSectionById('form-cash-out');
 })
 // add cash form 
 document.getElementById('btn-add-cash').addEventListener('click', function(event){
     event.preventDefault();
+    if (isNaN(addMoney) == true) {
+        
+    }
     const addMoney = getInputFieldValueById('input-add-cash');
     const pin = getInputFieldValueById('input-pin-add');
     if (pin == 1234) {
