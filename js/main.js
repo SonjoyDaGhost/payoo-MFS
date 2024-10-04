@@ -15,9 +15,7 @@ document.getElementById('btn-cashOut').addEventListener('click', function(){
 // add cash form 
 document.getElementById('btn-add-cash').addEventListener('click', function(event){
     event.preventDefault();
-    if (isNaN(addMoney) == true) {
-        
-    }
+    
     const addMoney = getInputFieldValueById('input-add-cash');
     const pin = getInputFieldValueById('input-pin-add');
     if (pin == 1234) {
