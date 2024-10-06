@@ -3,7 +3,7 @@ document.getElementById('btn-login').addEventListener('click', function(event){
     const phone = getInputFieldValueById('input-phone-number');
     const password = getInputFieldValueById('input-password');
     if (phone === 5 && password === 1234) {
-        window.location.href = '../home.html';
+        window.location.href = 'https://sonjoydaghost.github.io/payoo-MFS/home.html';
         
     }
     else{
